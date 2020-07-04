@@ -1,0 +1,52 @@
+ 
+.container {
+  width: 1190px;
+}
+section,
+aside {
+  margin: 10px;
+}
+section {
+  float: left;
+  width: 600px;
+  background-color: khaki;
+}
+aside {
+  float: right;
+  width: 158px;
+  background-color: lawngreen;
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 996px) {
+  [class*="col-"] {
+       width: 100%;
+   }
+  .img-large,
+  .img-small {
+    height: 850px;
+    max-width: 100%;
+  }
+
+ .container {
+   width: 100%;
+   padding: 0 2%
+ }
+ 
+.header,
+.social,
+.logo h1 {   
+  position: inherit;
+}
+.logo h1 {  
+  left: 12%
+ }
+.logo p { 
+  visibility: hidden;
+}
+.menu a { 
+  padding: 0px 10px;
+  line-height: 25px
+}
+}
